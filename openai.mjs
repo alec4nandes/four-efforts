@@ -72,7 +72,8 @@ function threeMarksOfExistence(problem) {
         },
         systemContent =
             "Categorize the problem under one of these three categories: " +
-            "Impermanence, Egolessness, Death. Here is a guide of the categories: " +
+            Object.keys(categories).join(", ") +
+            " Here is a guide of the categories: " +
             JSON.stringify(categories);
     return { systemContent, categories };
 }
