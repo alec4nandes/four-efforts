@@ -73,7 +73,7 @@ function threeMarksOfExistence(problem) {
         systemContent =
             "Categorize the problem under one of these three categories: " +
             Object.keys(categories).join(", ") +
-            " Here is a guide of the categories: " +
+            ". Here is a guide of the categories: " +
             JSON.stringify(categories);
     return { systemContent, categories };
 }
